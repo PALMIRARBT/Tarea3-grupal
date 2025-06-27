@@ -24,10 +24,10 @@ function generarNombreAlternativo(nombre, numero) {
 
 function generarHistoria(nombreAlt, rasgo, lugar, mundo, transporte) {
   const rasgos = {
-    'Magia': 'posee una conexión ancestral con fuerzas ocultas que fluyen a través de los portales cósmicos.',
-    'Rebeldía': 'se opone a todo lo establecido, rompiendo barreras entre realidades con una sonrisa desafiante.',
-    'Lógica': 'analiza y reorganiza cada universo con precisión quirúrgica y cálculos mentales avanzados.',
-    'Empatía': 'es capaz de comprender los corazones de criaturas que ni siquiera tienen forma física.'
+    'Magia': 'posee una conexión ancestral con fuerzas ocultas que fluyen a través de los portales cósmicos',
+    'Rebeldía': 'se opone a todo lo establecido, rompiendo barreras entre realidades con una sonrisa desafiante',
+    'Lógica': 'analiza y reorganiza cada universo con precisión quirúrgica y cálculos mentales avanzados',
+    'Empatía': 'es capaz de comprender los corazones de criaturas que ni siquiera tienen forma física'
   };
 
   const escenarios = {
