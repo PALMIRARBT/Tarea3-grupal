@@ -19,6 +19,11 @@ document.getElementById('formUniverso').addEventListener('submit', function (e) 
   const numeroMagico = parseInt(numeroMagicoValor);
   const rasgo = document.getElementById('rasgo').value;
   const lugar = document.getElementById('lugar').value.trim();
+  // Validar que lugar solo contenga letras y espacios
+  if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(lugar)) {
+    alert('El lugar solo debe contener letras y espacios.');
+    return;
+  }
   const tipoMundo = document.getElementById('tipoMundo').value;
   const transporte = document.getElementById('transporte').value;
 
@@ -86,3 +91,4 @@ function renderizarTarjeta(nombre, historia, tipoMundo) {
 
   contenedor.appendChild(tarjeta);
 }
+
