@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yo 404: Identidad No Encontrada</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-dark text-light">
+  <div class="container py-5">
+    <div id="tituloImagen" class="text-center mb-0">
+      <img src="./assets/img/What if titulo.png" alt="What if" class="img-fluid" style="max-width: 500px;">
+    </div>
+<form id="formUniverso" class="row g-3 bg-secondary p-4 rounded shadow-lg">
+      <div class="col-md-6">
+        <label for="nombre" class="form-label">Tu nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="col-md-6">
+        <label for="numeroMagico" class="form-label">Número mágico/dimensional</label>
+        <input type="number" class="form-control" id="numeroMagico" min="1" max="1000" required>
+      </div>
+      <div class="col-md-6">
+        <label for="rasgo" class="form-label">Rasgo dominante</label>
+        <select class="form-select" id="rasgo" required>
+          <option value="" disabled selected>Selecciona rasgo dominante</option>
+          <option value="Magia">Magia</option>
+          <option value="Rebeldía">Rebeldía</option>
+          <option value="Lógica">Lógica</option>
+          <option value="Empatía">Empatía</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="lugar" class="form-label">Nombre del lugar imaginario</label>
+        <input type="text" class="form-control" id="lugar" required>
+      </div>
+      <div class="col-md-6">
+        <label for="tipoMundo" class="form-label">Tipo de mundo</label>
+        <select class="form-select" id="tipoMundo" required>
+          <option value="" disabled selected>Selecciona el tipo de mundo</option>
+          <option value="Selva flotante">Selva flotante</option>
+          <option value="Ciudad de cristal">Ciudad de cristal</option>
+          <option value="Volcán parlante">Volcán parlante</option>
+          <option value="Cielo invertido">Cielo invertido</option>
+        </select>
+        
+      </div>
+      <div class="col-md-6">
+        <label for="transporte" class="form-label">Transporte interdimensional</label>
+        <select class="form-select" id="transporte" required>
+          <option value="" disabled selected>Selecciona tipo de transporte</option>
+          <option value="Dragón holográfico">Dragón holográfico</option>
+          <option value="Tren lunar">Tren lunar</option>
+          <option value="Burbuja voladora">Burbuja voladora</option>
+          <option value="Ascensor de luz">Ascensor de luz</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="fechaRegistro" class="form-label">Registro Interdimensional</label>
+        <input type="date" class="form-control" id="fechaRegistro" name="fechaRegistro" required>
+      </div>
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-5">Explorar</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="mt-5 row g-4 justify-content-center"></div>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
